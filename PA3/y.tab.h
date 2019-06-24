@@ -48,10 +48,10 @@ extern int yydebug;
     INTEGER = 258,
     REAL = 259,
     INT = 260,
-    STRING = 261,
-    VOID = 262,
-    CHAR = 263,
-    FLOAT = 264,
+    VOID = 261,
+    CHAR = 262,
+    FLOAT = 263,
+    STRING = 264,
     IF = 265,
     ELSE = 266,
     SWITCH = 267,
@@ -100,10 +100,10 @@ extern int yydebug;
 #define INTEGER 258
 #define REAL 259
 #define INT 260
-#define STRING 261
-#define VOID 262
-#define CHAR 263
-#define FLOAT 264
+#define VOID 261
+#define CHAR 262
+#define FLOAT 263
+#define STRING 264
 #define IF 265
 #define ELSE 266
 #define SWITCH 267
@@ -152,7 +152,7 @@ extern int yydebug;
 
 union YYSTYPE
 {
-#line 10 "bar.y" /* yacc.c:1909  */
+#line 9 "bar.y" /* yacc.c:1909  */
 
 	int iVal;
 	float rVal;

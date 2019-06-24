@@ -83,12 +83,12 @@ COMMENT		\/\/(.)*|\/\*([^\*]|\*+[^\*\/])*\*+\/
 {CHARACTER}     {yylval.cVal = charToDecimal(yytext);   return INTEGER;}
 {ID}		{int i=0; 
 		yylval.sVal = (char*)malloc(yyleng+1); 
-		for(i-0; i<yyleng; i++)	yylval.sVal[i] = yytext[i];
+		for(i=0; i<yyleng; i++)	yylval.sVal[i] = yytext[i];
 		yylval.sVal[yyleng] = '\0';
 		return ID;}
 {STRING}	{int i=0; 
                 yylval.sVal = (char*)malloc(yyleng+1);
-                for(i-0; i<yyleng; i++) yylval.sVal[i] = yytext[i];
+                for(i=0; i<yyleng; i++) yylval.sVal[i] = yytext[i];
                 yylval.sVal[yyleng] = '\0';
                 return STRING;}
 

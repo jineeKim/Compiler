@@ -1092,7 +1092,7 @@ YY_RULE_SETUP
 #line 84 "foo.l"
 {int i=0; 
 		yylval.sVal = (char*)malloc(yyleng+1); 
-		for(i-0; i<yyleng; i++)	yylval.sVal[i] = yytext[i];
+		for(i=0; i<yyleng; i++)	yylval.sVal[i] = yytext[i];
 		yylval.sVal[yyleng] = '\0';
 		return ID;}
 	YY_BREAK
@@ -1102,7 +1102,7 @@ YY_RULE_SETUP
 #line 89 "foo.l"
 {int i=0; 
                 yylval.sVal = (char*)malloc(yyleng+1);
-                for(i-0; i<yyleng; i++) yylval.sVal[i] = yytext[i];
+                for(i=0; i<yyleng; i++) yylval.sVal[i] = yytext[i];
                 yylval.sVal[yyleng] = '\0';
                 return STRING;}
 	YY_BREAK
